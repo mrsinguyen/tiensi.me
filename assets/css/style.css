@@ -37,6 +37,7 @@ article h2.title {
   font-size: .875em;
   padding: 0px 15px;
   margin: 0 0 30px 0;
+  white-space: nowrap;
 }
 .row {
   color: #111;
