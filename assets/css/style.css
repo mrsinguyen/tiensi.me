@@ -44,10 +44,12 @@ article h2.title {
   padding-top: 15px;
   margin-left: 0;
 }
+.row article {
+  zoom: 1;
+}
 .row p {
   clear: both;
 }
-
 .row.profile {
   background: #353535;
 }
