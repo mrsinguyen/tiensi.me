@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/mrsinguyen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://tiensi.me
+  * I am mrsinguyen (https://keybase.io/mrsinguyen) on keybase.
+  * I have a public key with fingerprint C2F0 9D58 7B6D 812D 4180  123C 93D7 7A73 4AC3 A1AE
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ac098a4ddad54273be6eb5adb62b77f6a2c68827baa851ffb7746bad1dc3b4c60a",
+            "fingerprint": "c2f09d587b6d812d4180123c93d77a734ac3a1ae",
+            "host": "keybase.io",
+            "key_id": "93d77a734ac3a1ae",
+            "kid": "0101ac098a4ddad54273be6eb5adb62b77f6a2c68827baa851ffb7746bad1dc3b4c60a",
+            "uid": "00c95915f86535054432fd5c995eef19",
+            "username": "mrsinguyen"
+        },
+        "service": {
+            "hostname": "tiensi.me",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1477817062,
+    "expire_in": 157680000,
+    "prev": "744b024aa0ccf5c976042d8ac59dea93185965b18e5b0b6542ba51c2da36b83b",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMImAnicrVJJaBRBFJ1ozCRD1Ci4IS5p0ICMSVd3V1f3JHEJChpFRdxRx9o608Z0
+j9M9k0UiipBEVBAURXBB9CAkUfQQEQR3R8nFBRUNifuG4pKToKjVLjeP1qWox3vv
+v/epq4MHhiI5ex40edVXjp7M6b60Lx1aMeLMq00ScVmjFNsk1fJfF9/AuOfHa20m
+xSQZyABT2TSwxhhmUFOQSrjOCcSM6ApByNKxQnXDUBDB2IDAsgSo6QQzwKhKNKrL
+WIpKlu3U8FQyZTu+sKWKJZsMGojozAAK04AhA0WlpsoQwkjVMFUxwFwIE64XKEQ4
+gj1earsCE4/4r3j/4P/n3OnfdjI1oQmgZehQhTLUNFWxGKSmCTm3gBkQPZ5ycB0X
+7LqUJ9qmG7kjNUclgWdsyoPVBl3+cHybO55dWhdETqZc36XuBgEnfD/pxQKZ35gM
+ePWcxP84xIntMGEsFBkuRriOFAOCSX07sAQaQgZAsq5EJd6QtFM8bgcMiHRDFieY
+wzPCEmkakRUNY5lSS3RAuqwpzMAUmoxjUwUGNHVIgMEhkYkudkcwBFRhWNWJoRIp
+6LTRcaUYEjFxjbD07BoH++kUl5ovX1ydG8qJhPIGDQi+VyhSUPT309Hr4e9S+uXp
+aYsn52YnmeW3+5Y8PVww5fbxa6O/vi7pCq1BebM/3cx9tp2uynRF29z+c+vfLjpX
+hh6W3T3as7u6/f6j8NzC6LDq3iUNM77t3LJLH3Vj1mYA01MTxfWLGyufV6mjK8ZU
+5jw8UfqjfGpr0/HvLe25D3pGtN/5WhwuC6+Y4x16Zzv7F/ZlJg5+Id052LdgeUHv
+qKEfrmd3HEvMnHQrMm9Gx0b3Qn2x/iTp7Hu8MtnWW3HkQN7481XNFVu7Dn0ZGlk7
+syVmDs8/5bfkZ1Z1Np2o/TK2ZH4VGHnkI0s3bzvTcXnZuHWfO6d3Fw4pHNCz9/37
+bEF/dsKb87fudbW+W1rkvElkz/4ENDE9mw==
+=TWPB
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mrsinguyen
+
+==================================================================
