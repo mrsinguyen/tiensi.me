@@ -48,41 +48,25 @@
         <article>
           <div class="span12">
             <h2 class="title">Learning Item</h2>
-            <script>
-              (function() {
-              var go1 = document.createElement('script'), s = document.getElementsByTagName('script')[0];
-                      go1.type = 'text/javascript';
-                      go1.async = true;
-                      go1.src = '//embed.go1.co/build.js';
-                      s.parentNode.insertBefore(go1, s);
-              })();
-            </script>
-  
-            <p>Video type</p>
-            <go1-li-detail li-id="1682028"
-                   go1-embed
-                   autoplay="false"
-                   go1-data-width="800"
-                   go1-data-height="400"></go1-li-detail>
-            <p></p>
-            <p>Video type</p>
-            <go1-li-detail li-id="1111583"
-                   go1-embed
-                   autoplay="false"
-                   go1-data-width="800"
-                   go1-data-height="400"></go1-li-detail>
-            <p></p>
-            <p>Text type</p>
-            <p></p>
-            <go1-li-detail li-id="1757182"
-                   go1-embed
-                   go1-data-width="800"
-                   go1-data-height="400"></go1-li-detail>
-            <p></p>
-            <p>An example LI embed code</p>
-            <p></p>
-            <script src="https://gist.github.com/mrsinguyen/2162e67bccfb3d673106db92cf15e6c7.js"></script>
-            <p></p>
+                <!-- Initial script need to test and improve, this code will generate automatic -->
+                <script async src="//embed.go1.co/build.js"></script>
+                <!-- 1756912 is id of learning item -->
+                <!-- self upload video type -->
+                <p>Video type</p>
+                <go1-li-detail li-id="1682028" go1-embed autoplay="false" go1-data-width="800" go1-data-height="400"></go1-li-detail>
+                <!-- from youtube -->
+                <p></p>
+                <p>Video type</p>
+                <go1-li-detail li-id="1111583" go1-embed autoplay="false" go1-data-width="800" go1-data-height="400"></go1-li-detail>
+                <!-- Text type -->
+                <p></p>
+                <p>Text type</p>
+                <go1-li-detail li-id="1757182" go1-embed go1-data-width="800" go1-data-height="400"> </go1-li-detail>
+                <p></p>
+                <p>An example LI embed code</p>
+                <p></p>
+                <script src="https://gist.github.com/mrsinguyen/2162e67bccfb3d673106db92cf15e6c7.js"></script>
+                <p></p>
           </div>
         </article>
       </div>
