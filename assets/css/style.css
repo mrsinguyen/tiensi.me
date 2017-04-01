@@ -57,7 +57,18 @@ article h2.title {
 .row.inversed {
   border-top: 0 none;
 }
-
+.card-wrapper {
+  clear: both;
+}
+.card-wrapper .card-view {
+  margin-bottom: 5px;
+  width: 250px;
+  height: 380px;
+  float: left;
+}
+.code-example {
+  clear: both;
+}
 footer {
   color: #444;
 }
