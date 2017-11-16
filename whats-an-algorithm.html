@@ -134,8 +134,8 @@
           }
       };
       // Post back the enrollment to consumer.
-      if (ScormService) {
-          ScormService(enrollment);
+      if (window.ScormService) {
+          window.ScormService(enrollment);
       }
   </script>
   </body>
