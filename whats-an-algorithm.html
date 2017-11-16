@@ -5,7 +5,7 @@
     <title>What's an algorithm? | DEMO</title>
     <meta name="description" content="What's an algorithm?.">
     <meta name="keywords" content="">
-    <link href='//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="vendor/flatstrap/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/flatstrap/assets/css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -58,85 +58,85 @@
       </footer>
     </div>
     <script type="text/javascript">
-    var remote = new easyXDM.Rpc({
-        local: "https://scorm-wrapper.go1.co/easyXDM/name.html",
-        swf: "https://scorm-wrapper.go1.co/easyXDM/easyxdm.swf"
-    }, {
-        remote: {
-            status: {},
-            close: {}
-        }
-    });
+      var remote = new easyXDM.Rpc({
+          local: "https://scorm-wrapper.go1.co/easyXDM/name.html",
+          swf: "https://scorm-wrapper.go1.co/easyXDM/easyxdm.swf"
+      }, {
+          remote: {
+              status: {},
+              close: {}
+          }
+      });
 
-    var ScormService = function (data) {
-        console.log("The provider in process to send course information back to the consumer:", data);
-        if (window.ScormService_MAPPING_DATA) {
-            var sw = ScormService_MAPPING_DATA.objectives;
-            if (sw && sw.length) {
-                var score = 0,
-                    scoreweight = 0,
-                    progress = 0,
-                    progressweight = 0;
-                for (var c = 0; c < sw.length; c++) {
-                    if (data.objectives[sw[c].id]) {
-                        scoreweight += sw[c].scoreweight;
-                        progressweight += sw[c].progressweight;
-                        progress += sw[c].progressweight * data.objectives[sw[c].id].progress;
-                        score += sw[c].scoreweight * data.objectives[sw[c].id].score;
-                    }
-                }
-                if (progressweight > 0) {
-                    progress /= progressweight;
-                    data.course.progress = Math.round(progress);
-                } else {
-                    data.progress = 0;
-                }
-                if (scoreweight > 0) {
-                    score /= scoreweight;
-                    data.course.score = Math.round(score);
-                }
-            }
-        }
-        if (remote && remote.status) {
-            console.log("The provider now invoking remote.status to send data to consumer frame:", data);
-            remote.status(data, function (d) {
-            });
-        }
-    };
+      var ScormService = function (data) {
+          console.log("The provider in process to send course information back to the consumer:", data);
+          if (window.ScormService_MAPPING_DATA) {
+              var sw = ScormService_MAPPING_DATA.objectives;
+              if (sw && sw.length) {
+                  var score = 0,
+                      scoreweight = 0,
+                      progress = 0,
+                      progressweight = 0;
+                  for (var c = 0; c < sw.length; c++) {
+                      if (data.objectives[sw[c].id]) {
+                          scoreweight += sw[c].scoreweight;
+                          progressweight += sw[c].progressweight;
+                          progress += sw[c].progressweight * data.objectives[sw[c].id].progress;
+                          score += sw[c].scoreweight * data.objectives[sw[c].id].score;
+                      }
+                  }
+                  if (progressweight > 0) {
+                      progress /= progressweight;
+                      data.course.progress = Math.round(progress);
+                  } else {
+                      data.progress = 0;
+                  }
+                  if (scoreweight > 0) {
+                      score /= scoreweight;
+                      data.course.score = Math.round(score);
+                  }
+              }
+          }
+          if (remote && remote.status) {
+              console.log("The provider now invoking remote.status to send data to consumer frame:", data);
+              remote.status(data, function (d) {
+              });
+          }
+      };
 
-    // Mapping data to re-calculate score.
-    var ScormService_MAPPING_DATA = {
-        "objectives": [{
-            "id": "COURSE1",
-            "title": "What's an algorithm?",
-            "progressweight": "100",
-            "scoreweight": "100"
-        }]
-    };
-    var enrollment = {
-        page: "https://tiensi.me/whats-an-algorithm.html",
-        started: "2017-11-16T13:50:34Z+0930",
-        completed: "2017-11-16T13:50:34Z+0930",
-        progress: "100",
-        score: "100",
-        course: {
-            started: "2017-11-16T13:50:34Z+0930",
-            completed: "2017-11-16T13:50:34Z+0930"
-        },
-        objectives: {
-            "COURSE1": {
-                title: "What's an algorithm?",
-                started: "2017-11-16T13:50:34Z+0930",
-                completed: "2017-11-16T13:50:34Z+0930",
-                progress: "100",
-                score: "100"
-            }
-        }
-    };
-    // Post back the enrollment to consumer.
-    if (ScormService) {
-        ScormService(enrollment);
-    }
-</script>
+      // Mapping data to re-calculate score.
+      var ScormService_MAPPING_DATA = {
+          "objectives": [{
+              "id": "COURSE1",
+              "title": "What's an algorithm?",
+              "progressweight": "100",
+              "scoreweight": "100"
+          }]
+      };
+      var enrollment = {
+          page: "https://tiensi.me/whats-an-algorithm.html",
+          started: "2017-11-16T13:50:34Z+0930",
+          completed: "2017-11-16T13:50:34Z+0930",
+          progress: "100",
+          score: "100",
+          course: {
+              started: "2017-11-16T13:50:34Z+0930",
+              completed: "2017-11-16T13:50:34Z+0930"
+          },
+          objectives: {
+              "COURSE1": {
+                  title: "What's an algorithm?",
+                  started: "2017-11-16T13:50:34Z+0930",
+                  completed: "2017-11-16T13:50:34Z+0930",
+                  progress: "100",
+                  score: "100"
+              }
+          }
+      };
+      // Post back the enrollment to consumer.
+      if (ScormService) {
+          ScormService(enrollment);
+      }
+  </script>
   </body>
 </html>
