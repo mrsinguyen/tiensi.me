@@ -50,13 +50,11 @@
       <footer>
         <div class="row footer inversed">
           <div class="span12">
-            <p>
-              © 2017.
-            </p>
           </div>
         </div>
       </footer>
     </div>
+    <!-- Wrapper code -->
     <script type="text/javascript">
       var remote = new easyXDM.Rpc({
           local: "https://scorm-wrapper.go1.co/easyXDM/name.html",
@@ -67,7 +65,6 @@
               close: {}
           }
       });
-
       var ScormService = function (data) {
           console.log("The provider in process to send course information back to the consumer:", data);
           if (window.ScormService_MAPPING_DATA) {
@@ -103,7 +100,6 @@
               });
           }
       };
-
       // Mapping data to re-calculate score.
       var ScormService_MAPPING_DATA = {
           "objectives": [{
@@ -133,7 +129,6 @@
               }
           }
       };
-      // Post back the enrollment to consumer.
       if (window.ScormService) {
           window.ScormService(enrollment);
       }
