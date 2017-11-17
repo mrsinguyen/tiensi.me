@@ -68,7 +68,6 @@
           }
       });
       var ScormService = function (data) {
-          console.log("The provider in process to send course information back to the consumer:", data);
           if (window.ScormService_MAPPING_DATA) {
               var sw = ScormService_MAPPING_DATA.objectives;
               if (sw && sw.length) {
@@ -97,7 +96,6 @@
               }
           }
           if (remote && remote.status) {
-              console.log("The provider now invoking remote.status to send data to consumer frame:", data);
               remote.status(data, function (d) {
               });
           }
